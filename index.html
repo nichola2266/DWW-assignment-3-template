@@ -7,12 +7,22 @@
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <title>Designing with web template</title>
 
-    <!-- ################################   styles  ################################ -->     
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <!-- lucide icons are loaded at the bottom of body tag -->
+    <!-- font Heading -->     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
 
-    <!-- ########################   scripts and ressources  ######################## -->
+    <!--font SubHeading-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Protest+Strike&display=swap" rel="stylesheet">
+
+    
+    <!-- linking html to css-->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!--scripts and ressources-->
     <!-- Adafruit IO custom library -->
     <script src="https://cdn.jsdelivr.net/gh/methio/adafruitIO-class@latest/index.js"></script>
     <!-- alwan color picker -->
@@ -22,15 +32,52 @@
      <script src="https://chir.ag/projects/ntc/ntc.js"></script>
     <!-- script custom -->
     <script src="script.js" defer></script>
+
+
+
 </head>
+
+<!--Main Focus-->
 <body>
+    <!--Header-->
+    <section class="flex flex-row justify-center">
+        <div>
+            <section><h1>CatCuddle Design</h1>
+        </div>
+
+    </section>
+
+    <!--Colour-Strip-->
+    <section>
+        <div class="color-strip">
+            <div class="flex flex-row justify-center ">
+            <p class="button" id="clear">CLEAR</p>
+            <p class="button" id="save">SAVE</p>
+            <p class="button" id="senddesign">SEND DESIGN</p>
+            </div>
+        </div>
+        
+    </section>
 
 
-    
-    <!-- lucide icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-        lucide.createIcons();
-    </script>
+    <!--Grid Design-->
+     <main>
+        <div class="flex flex-row justify-center">
+            <!--fill button-->
+            <h2 class="fill">FILL IN YOUR GRID</h2>
+        </div>
+        
+
+        <section>
+            <div class="flex justify-center"> 
+            <h2>9*9 grid</h2>
+            </div>
+            
+        <div id="grid" class="justify-center">
+            <!-- Grid cells will be generated here from script.js -->
+        </div>
+        </section>
+    </main>
+
 </body>
 </html>

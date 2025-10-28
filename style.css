@@ -8,11 +8,13 @@
 /* set variables for colors and spaces */
 :root{
 
-    --c-main : #FF7400;
-    --c-sec-100 : #FFFFFF;
-    --c-sec-200 : #F9F9F9;
-    --c-sec-500 : #BABABA;
-    --c-sec-900 : #141414; 
+    --c-sec-50 : #DFA350;
+    --c-sec-100 : #FFFBF0;
+    --c-sec-200 : #EEBFC2;
+    --c-sec-500 : #A67272;
+    --c-sec-900 : #EDB093; 
+    --c-sec-1000: (237,176,147);
+
 
     --space-05 : .5em;
     --space-1 : 1em;
@@ -57,11 +59,100 @@
 
 body {
 
+    /* heading font size and family */
+    color: var(--c-sec-500);
+    font-size : var(--space-1);
+    font-family: "Protest Strike", sans-serif;
+    margin-top: .75em;
 
-    /* base font size and family */
-    font-size : 16px;
-    font-family: "Inter", sans-serif;
 
-    /* how to use variables */
-    background-color : var(--c-sec-100);
+
+    /*button style*/
+    .button{
+    background-color: var(--c-sec-200);
+    color: black;
+    padding: var(--space-05) var(--space-05);
+    border-radius: var(--space-05);
+    font-family: "Pangolin", sans-serif;
+    font-size: 1em;
+    margin: var( --space-05);
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+  #clear{
+    width: 82px;
+    height:39px;
+  }
+
+  #save{
+    width: 130px;
+    height:39px;
+  }
+
+    /*send design button*/
+  #senddesign{
+    background-color: var(--c-sec-50);
+    color: white;
+    padding: var(--space-05) var(--space-05);
+    border-radius: 1em;
+    font-family: "Protest Strike", sans-serif;
+    font-size: 1.3em;
+    margin: var( --space-05);
+    width: 140px;
+    height: 43px;
+    display: block;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0.5em;
+    }
+
+    .color-strip {
+    Background-color: var(--c-sec-500);
+    height: 1.5em;
+
+
+    }
+
+    /*clear button*/
+  #clear {
+      align-self: flex-start;
+  }
+
+  /*Fill Button*/
+    .fill{
+    color: grey;
+    font-size : var(--space-2);
+    font-family: "Protest Strike", sans-serif;
+    margin-top: 1.2em;
+    }
+
+
+
+  /* main background colour */
+    background-color: var(--c-sec-100);
+
+}
+
+#grid {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+}
+
+.cell {
+  padding-top: 3em;
+  width: 40px;
+  height: 30px;
+  background-color: var(--c-sec-200);
+  border-radius: 0.3em;
 }
